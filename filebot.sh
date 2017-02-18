@@ -7,7 +7,7 @@ kodiClients=$"192.168.1.124,192.168.1.184" #the two pcs - comma delimited
 outputDir=$"/home/(user)/Documents/external_hdd/Organized_Media" #ensure no backslash @ the end!
 
 #----------Script--------#
-paplay /home/duke/Downloads/Turn.wav #play a sound to signify the download is complete
+paplay /home/(user)/Downloads/Turn.wav #play a sound to signify the download is complete
 
 #call filebot w/update sonarr/radarr script within
 # {info.id} returns the tvdb or tmdb, depending on whether it's a TV show or a movie
