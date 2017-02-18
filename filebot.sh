@@ -15,4 +15,4 @@ filebot -script fn:amc --output $outputDir --action duplicate --conflict skip -n
 
 
 #old script for updating sickrage
-#filebot -script fn:amc --output "/home/duke/Documents/external_hdd/Organized_Media" --action duplicate --conflict skip -non-strict --log-file amc.log --def exec="curl 'http://192.168.1.89:8081/api/c455975a5cc76741d0f8a616eadac0a8?cmd=show.refresh&tvdbid={info.id}'" excludeList=.excludes unsorted=y music=y artwork=y xbmc=192.168.1.184,192.168.1.124 "ut_dir=$TORRENT_PATH/$TORRENT_NAME" "ut_kind=multi" "ut_title=$TORRENT_NAME"
+#filebot -script fn:amc --output "/home/(user)/Documents/external_hdd/Organized_Media" --action duplicate --conflict skip -non-strict --log-file amc.log --def exec="curl 'http://192.168.1.89:8081/api/c455975a5cc76741d0f8a616eadac0a8?cmd=show.refresh&tvdbid={info.id}'" excludeList=.excludes unsorted=y music=y artwork=y xbmc=192.168.1.184,192.168.1.124 "ut_dir=$TORRENT_PATH/$TORRENT_NAME" "ut_kind=multi" "ut_title=$TORRENT_NAME"
