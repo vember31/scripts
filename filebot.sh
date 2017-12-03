@@ -2,10 +2,6 @@
 ARG_ID="$1"
 ARG_NAME="$2"
 ARG_PATH="$3"
-#username=$"username"
-#pushbulletAPI=$"insert pushbullet API here"
-#kodiClients=$"192.168.1.124,192.168.1.184" #the two pcs - comma delimited
-#outputDir=$"/home/$username/Documents/external_hdd/Organized_Media" #ensure no backslash @ the end!
 
 #----------Script--------#
 #paplay /home/$username/Downloads/Turn.wav #play a sound to signify the download is complete; turn off if you have no spaekers
