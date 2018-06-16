@@ -81,6 +81,7 @@ dht = disable
 #
 protocol.pex.set = no
 
+# Necessary for communication with Sonarr, Radarr, Flood and Transdroid.
 scgi_port = 0.0.0.0:5000
 
 #Execute Filebot (rtorrent-postprocess.sh) upon completion.
