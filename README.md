@@ -9,6 +9,8 @@ Mah SCRIPTS
 
 <b>rtorrent.rc:</b> A backup / reference to the rtorrent.rc configuration file that lives in ~/
 
+<b>external.conf:</b> Additional configuration for lighttpd.conf when using in conjunction with Pi-Hole.  If you're not using pihole, the code inside of this file can be put directly in /etc/lighttpd/lighttpd.conf.
+
 
 The Filebot.sh script should be called by following the instructions on Deluge's website.  Essentially, just put the path to your script in the field for Execute. Obviously, make sure that you both of these scripts are executable, and make sure that you have jq installed.
 
