@@ -26,7 +26,7 @@ session = /home/duke/Torrent_Downloads/.session
 
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
-schedule = watch_directory,5,5,load_start=/home/duke/Torrent_Files/*.torrent
+schedule = watch_directory,5,5,"load.start=/home/duke/Torrent_Files/*.torrent,d.delete_tied="
 
 # Close torrents when diskspace is low.
 schedule = low_diskspace,5,60,close_low_diskspace=10240M
@@ -86,6 +86,7 @@ scgi_port = 0.0.0.0:5000
 
 #Execute Filebot (rtorrent-postprocess.sh) upon completion.
 method.set_key=event.download.finished,filebot,"execute={/home/duke/Documents/rtorrent-postprocess.sh,$d.base_path=,$d.name=,$d.custom1=}"
+# Old code: system.method.set_key=event.download.finished,filebot,"execute={'`pwd`/rtorrent-postprocess.sh',$d.get_base_path=,$d.get_name=,$d.get_custom1=}"
 
 
 ##### THIS AREA BELOW IS NOT NEEDED BUT I'M KEEPING IT IN CASE ####
