@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Run script as root to reinstall jackett, if it fails during an auto-update.
+
 sudo rm Jackett.Binaries.LinuxAMDx64.tar.gz
 sudo service jackett stop
 echo "Stopping Jackett service."
