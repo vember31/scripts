@@ -11,6 +11,8 @@ Mah SCRIPTS
 
 <b>external.conf:</b> Additional configuration for lighttpd.conf when using in conjunction with Pi-Hole.  If you're not using pihole, the code inside of this file can be put directly in /etc/lighttpd/lighttpd.conf.
 
+<b>jackett_reinstall.sh:</b> A shell script, to be run from /opt/, that will reinstall the latest stable release of Jackett.  This was written due to challenges with jackett's auto-update feature, that occasionally cause jackett to fail.
+
 
 The Filebot.sh script should be called by following the instructions on Deluge's website.  Essentially, just put the path to your script in the field for Execute. Obviously, make sure that you both of these scripts are executable, and make sure that you have jq installed.
 
