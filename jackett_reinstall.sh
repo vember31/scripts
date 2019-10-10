@@ -9,7 +9,7 @@ sleep 5
 sudo rm -r /opt/Jackett/
 echo "Current Jackett directory removed."
 release=$(wget -q https://github.com/Jackett/Jackett/releases/latest -O - | grep "title>Release" | cut -d " " -f 4)
-sudo wget -q https://github.com/Jackett/Jackett/releases/download/$release/Jackett.Binaries.LinuxAMDx64.tar.gz
+sudo wget -q -o /opt/Jackett.Binaries.LinuxAMDx64.tar.gz https://github.com/Jackett/Jackett/releases/download/$release/Jackett.Binaries.LinuxAMDx64.tar.gz
 echo "Downloaded latest Jackett release."
 sudo tar -xf /opt/Jackett*
 echo "Extracted latest Jackett Release."
