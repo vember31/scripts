@@ -11,7 +11,7 @@ echo "Current Jackett directory removed."
 release=$(wget -q https://github.com/Jackett/Jackett/releases/latest -O - | grep "title>Release" | cut -d " " -f 4)
 sudo wget -q -o /opt/Jackett.Binaries.LinuxAMDx64.tar.gz https://github.com/Jackett/Jackett/releases/download/$release/Jackett.Binaries.LinuxAMDx64.tar.gz
 echo "Downloaded latest Jackett release."
-sudo tar -xzf /opt/Jackett.Binaries.LinuxAMDx64.tar.gz -C /opt/
+sudo tar -xf /opt/Jackett.Binaries.LinuxAMDx64.tar.gz -C /opt/
 echo "Extracted latest Jackett Release."
 sudo chown -R duke:duke /opt/Jackett/
 sudo /opt/Jackett/install_service_systemd.sh
